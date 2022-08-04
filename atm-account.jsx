@@ -22,7 +22,6 @@ const Account = () => {
   };
   const handleSubmit = (event) => {
     let newTotal = isDeposit ? accountState + deposit : accountState - deposit;
-    alert(`Account total = ${newTotal}`);
     setAccountState(newTotal);
     event.preventDefault();
   };
